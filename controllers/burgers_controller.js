@@ -15,14 +15,13 @@ router.get("/", function(req, res) {
         var hbsObject = {
             burgers: data
         };
-        console.log(hbsObject);
         res.render("index", hbsObject);
     });
 });
 
 // Route to insert a new burger
-router.post("/burgers/insertOne", function(req, res) {
-    burger.insertOne(["burger_name"], [req.body.name], function(result) {
+router.post("/", function(req, res) {
+    burger.insertOne(req.body.burger_name, function() {
         
         // Redirect to the index page
         res.redirect("/");
@@ -30,21 +29,17 @@ router.post("/burgers/insertOne", function(req, res) {
 });
 
 // Route to update burger once it's devoured
-router.put("/burgers/updateOne:id", function(req, res) {
-    var condition = "id = " + req.params.id;
-    console.log("condition", condition);
+router.put("/:id", function(req, res) {
+    var id = req.params.id;
 
-    burger.updateOne(
-        {
-            devoured: req.body.devoured
-        },
-        condition,
-        function(result) {
+    console.log("id", id);
+
+    burger.updateOne(id, function() {
             
-            // Redirect to the index page
-            res.redirect("/");
-        }
-    );
+        // Redirect to the index page
+        res.redirect("/");
+        
+    });
 });
 
 // Export routes for server.js to use
