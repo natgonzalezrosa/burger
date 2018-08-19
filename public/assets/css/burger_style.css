@@ -19,13 +19,21 @@ h3 {
     font-size: 36px;
 }
 
-ul {
+ul, p {
     font-family: 'Indie Flower', cursive;
     font-size: 24px;
+}
+
+p {
+    font-style: italic;
 }
 
 .jumbotron {
     padding-top: 20px;
     padding-bottom: 10px;
     margin-top: 20px;
+}
+
+.list-group-item {
+    background: #f3fbda;
 }
