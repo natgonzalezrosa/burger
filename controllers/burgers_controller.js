@@ -22,7 +22,7 @@ router.get("/", function(req, res) {
 
 // Route to insert a new burger
 router.post("/burgers/insertOne", function(req, res) {
-    burger.insertOne(["burger_name"], [req.body.burger_name], function(result) {
+    burger.insertOne(["burger_name"], [req.body.name], function(result) {
         
         // Redirect to the index page
         res.redirect("/");

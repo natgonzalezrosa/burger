@@ -36,4 +36,9 @@ p {
 
 .list-group-item {
     background: #f3fbda;
+    margin-bottom: 10px;
+}
+
+#burg {
+    background: #f3fbda;
 }
