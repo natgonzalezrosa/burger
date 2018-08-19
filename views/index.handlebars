@@ -1,29 +1,23 @@
 <div class="container">
 
     <!--Jumbotron-->
-    <div class="jumbotron text-center mdb-color lighten-2 white-text z-depth-2">
+    <div class="jumbotron text-center pink lighten-4">
 
         <!--Title-->
-        <h1 class="card-title h2-responsive mt-2 font-bold">
-            <strong>Eat Da Burger!</strong>
-        </h1>
+        <h1>Eat Da Burger!</h1>
         <img src="/assets/img/burger.png" alt="Bunch of burgers" class="img-responsive center-block" style="height: 250px;">
         <img src="/assets/img/burger.png" alt="Bunch of burgers" class="img-responsive center-block" style="height: 250px;">
 
-        <hr class="my-4 rgba-white-light">
+        <hr class="my-4 pb-2">
 
         <!--Subtitle-->
-        <h2 class="mt-4">
-            <strong>Burgers Never Taste So Good!</strong>
-        </h2>
+        <h2>Burgers Never Taste So Good!</h2>
 
     </div>
 
     <div class="row">
-        <div class="lg-col-6">
-            <h1>Eat da Burger!</h1>
-
-            <h2>Burger Menu</h2>
+        <div class="col-md-6">
+            <h3>Burger Menu</h3>
             <ul class="list-group list-group-flush">
                 {{#each burgers}} {{#unless this.devoured}}
                 <li class="list-group-item">
@@ -37,8 +31,8 @@
         </div>
 
 
-        <div class="lg-col-6">
-            <h2>Devoured Burgers</h2>
+        <div class="col-md-6">
+            <h3>Devoured Burgers</h3>
             <ul>
                 {{#each burgers}} {{#if this.devoured}}
                 <li class="list-group-item">
@@ -53,9 +47,9 @@
     </div>
 
     <div class="row">
-        <div class="lg-col-12">
+        <div class="col-md-6">
             <!-- Add a burger form -->
-            <h2>Add a Burger</h2>
+            <h3>Add a Burger</h3>
             <form class="create-form" method="POST" action="burgers/insertOne">
 
                 <div class="form-group">
@@ -63,7 +57,7 @@
                     <input type="text" id="burg" name="name">
                 </div>
 
-                <button type="submit">Add Burger</button>
+                <button type="button" class="btn btn-indigo btn-rounded" id="submit">Submit</button>
             </form>
         </div>
     </div>

@@ -1,0 +1,31 @@
+
+body {
+    background-image: url("../img/halftone-yellow.png");
+}
+
+
+h1, h2 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 60px;
+}
+
+h2 {
+    font-family: 'Bungee Shade', cursive;
+    font-size: 36px;
+}
+
+h3 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 36px;
+}
+
+ul {
+    font-family: 'Indie Flower', cursive;
+    font-size: 24px;
+}
+
+.jumbotron {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+}
