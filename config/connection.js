@@ -13,9 +13,13 @@ if (process.env.JAWSDB_URL) {
       password: '12345678',
       database: 'burgers_db'
     });
-  }
 
-// Make connection
+    connection.connect(function(err) {
+      if (err) throw err
+    })
+  };
+
+/* // Make connection
 connection.connect(function(err) {
     if (err) {
         console.error("error connecting: " + err.stack);
@@ -23,6 +27,6 @@ connection.connect(function(err) {
     }
     console.log("connected as id " + connection.threadId);
 });
-
+ */
 // Export connection for ORM to use
 module.exports = connection;
