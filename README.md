@@ -23,4 +23,4 @@ Demo can be found [right here](https://shielded-hamlet-17331.herokuapp.com/)
 
 4. Open the local application on PORT 3000 at: http://localhost:3000/
 
-[cat chasing burger](https://i2.wp.com/38.media.tumblr.com/tumblr_lml1dqeMSE1qzoxyvo1_500.gif)
+![cat chasing burger](./cat.gif)
