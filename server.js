@@ -8,7 +8,7 @@ var app = express();
 app.use(express.static(process.cwd() + "/public"));
 
 // Parse application/x-www-form-urlencoded
-app.use(bodyParser.urlencoded({ extend: false }));
+app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(methodOverride("_method"));
 
