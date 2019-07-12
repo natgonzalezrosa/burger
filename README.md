@@ -6,7 +6,7 @@ Eat the burger is a simple full-stack application utilizing the MVC design patte
 ![Burger Screencap](./burger_screen.png)
 
 ## Instructions
-The user can enter the name of a burger into the text box and click Submit to add the burger to the Burger Menu.  If the user would like to devour it, then they would click the "Devour" button.  The devoured burger will then be displayed under the Devoured Burger column.  The devoured status will then be updated accordingly in MySQL/JawsDB.
+The user can enter the name of a burger into the textbox and click "Submit" to add the burger to the Burger Menu.  If the user would like to devour it, then they would click the "Devour" button.  The devoured burger will then be displayed under the Devoured Burger column.  The devoured status will then be updated accordingly in MySQL/JawsDB.
 
 ## Demo
 Demo can be found [right here](https://shielded-hamlet-17331.herokuapp.com/)
